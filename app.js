@@ -1,14 +1,14 @@
 /* ==========================================================================
-   NIFITIVA APP LOGIC - DATA, FILTERS, MODALS (LOCKED PREMIUM BLACK)
+   NIFITIVA APP LOGIC - DATA, FILTERS, MODALS (LOCKED PREMIUM BLACK & INR PRICING)
    ========================================================================== */
 
-// --- 1. Product Database (14 Real Items Scraped from bio.site/nifitiva) ---
+// --- 1. Product Database (14 Real Items Scraped from bio.site/nifitiva & Verified on Amazon India) ---
 const PRODUCTS_DATA = [
     {
         id: "sandscape",
-        title: "3D Sandscape In Motion Display",
+        title: "Arthink Moving Sand Art Dynamic Sandscape Picture",
         category: "decor",
-        price: 39.00,
+        price: 999,
         rating: 4.8,
         reviewsCount: 312,
         image: "https://media.bio.site/sites/590d4e5c-2c2f-401d-acca-7d3d15156ab4/2YMopVyFdSAndZYoVkVq2Z.webp",
@@ -16,7 +16,7 @@ const PRODUCTS_DATA = [
         materials: ["Glass", "Sand", "Acrylic"],
         edits: ["organic"],
         specs: {
-            "Dimensions": "18cm x 19cm",
+            "Dimensions": "7 inches (Round)",
             "Material": "Double-sided polished glass, quicksand, fine acrylic base",
             "Visual Style": "Relaxing dynamic desert landscape art",
             "Adjustable Flow": "Includes air regulator to adjust flow speed"
@@ -27,14 +27,14 @@ const PRODUCTS_DATA = [
             "Excellent desk ornament, nightstand accent, or modern bookshelf piece.",
             "Crafted from highly transparent lead-free glass for maximum clarity."
         ],
-        description: "The 3D Quicksand Sandscape in Motion is a stunning decorative art piece that constantly shifts and reforms into natural land formations right before your eyes. Perfect for adding a touch of soothing luxury to your desk or living room shelves, it features high-transparency glass and vibrant sand layers that create new landscapes with every single rotation.",
+        description: "The Arthink Moving Sand Art Picture is a stunning, round glass kinetic sand sculpture that constantly shifts and reforms into natural land formations right before your eyes. Perfect for adding a touch of soothing luxury to your desk or living room shelves, it features high-transparency glass and vibrant sand layers that create new landscapes with every single rotation.",
         affiliateUrl: "https://amzn.to/4wg0bKQ"
     },
     {
         id: "led-vine",
-        title: "LED Vine Wall Hanging Light",
+        title: "LED Willow Branch Vine Hanging Lights",
         category: "electrical",
-        price: 49.00,
+        price: 1299,
         rating: 4.9,
         reviewsCount: 154,
         image: "https://media.bio.site/sites/590d4e5c-2c2f-401d-acca-7d3d15156ab4/q7WAk8TY5PnEZacpYBwwA9.jpg",
@@ -54,22 +54,22 @@ const PRODUCTS_DATA = [
             "Creates an instantly magical, warm, and comforting atmospheric wall accent.",
             "Stays completely cool to the touch after hours of continuous illumination."
         ],
-        description: "Transform your bare walls into a cozy mystical forest with the LED Vine Wall Light. Designed to look like a glowing branch scaling your room, it features 144 micro warm-white LEDs woven into fully flexible brown vine branches that you can drape, fold, and mount into corners, bookshelves, or surrounding mirrors for premium ambient glow.",
+        description: "Transform your bare walls into a cozy mystical forest with the LED Willow Vine Hanging Light. Designed to look like a glowing branch scaling your room, it features 144 micro warm-white LEDs woven into fully flexible brown vine branches that you can drape, fold, and mount into corners, bookshelves, or surrounding mirrors for premium ambient glow.",
         affiliateUrl: "https://amzn.to/4d57NXW"
     },
     {
         id: "aesthetic-decor",
-        title: "Aesthetic Room Decor Items Bundle",
+        title: "SpecialYou Green Ivy Artificial Vines with Fairy Lights",
         category: "decor",
-        price: 29.90,
+        price: 399,
         rating: 4.6,
         reviewsCount: 88,
         image: "https://media.bio.site/sites/590d4e5c-2c2f-401d-acca-7d3d15156ab4/q8Gg8MXp2n8jxeVuHPQtZf.jpg",
         tag: "Editorial Choice",
-        materials: ["Ceramic", "Glass", "Linen"],
+        materials: ["Plastic", "LEDs", "Silk"],
         edits: ["organic"],
         specs: {
-            "Bundle Includes": "Minimalist ceramic bubble tray, micro reed diffuser vase, aesthetic stone coaster",
+            "Bundle Includes": "4 green ivy artificial vines, Eelectric warm-white LED string fairy lights",
             "Aesthetic Type": "Creamy beige Wabi-Sabi textures",
             "Ideal Placement": "Entryway console tables, vanity tops, desk corners"
         },
@@ -83,9 +83,9 @@ const PRODUCTS_DATA = [
     },
     {
         id: "cube-sticker",
-        title: "3D Cube Pixelated Box Illusion Sticker",
+        title: "3D Cube Pixelated Box Floating Void Wall Sticker",
         category: "decor",
-        price: 19.50,
+        price: 199,
         rating: 4.5,
         reviewsCount: 42,
         image: "https://media.bio.site/sites/590d4e5c-2c2f-401d-acca-7d3d15156ab4/3KBBEMhLiP4ohReDtq7Aj6.jpg",
@@ -108,9 +108,9 @@ const PRODUCTS_DATA = [
     },
     {
         id: "neon-led",
-        title: "Neon LED Flexible Strip Lights",
+        title: "Flexible Silicone Waterproof LED Neon Light Strip",
         category: "electrical",
-        price: 34.00,
+        price: 999,
         rating: 4.8,
         reviewsCount: 521,
         image: "https://media.bio.site/sites/590d4e5c-2c2f-401d-acca-7d3d15156ab4/Stg5aG6yA3f8437dsEhLAe.jpg",
@@ -133,9 +133,9 @@ const PRODUCTS_DATA = [
     },
     {
         id: "sensor-light",
-        title: "Wireless Magnetic Motion Sensor Light",
+        title: "Wireless Magnetic Motion Activated LED Bar Light",
         category: "electrical",
-        price: 24.50,
+        price: 349,
         rating: 4.7,
         reviewsCount: 198,
         image: "https://media.bio.site/sites/590d4e5c-2c2f-401d-acca-7d3d15156ab4/qJiRxfsp6aXoJzNaf5XCJg.jpg",
@@ -158,9 +158,9 @@ const PRODUCTS_DATA = [
     },
     {
         id: "square-mirror",
-        title: "Big Square Acrylic Mirror Wall Stickers",
+        title: "Self-Adhesive Acrylic Mirror Panels Sheet (Pack of 4)",
         category: "decor",
-        price: 28.00,
+        price: 399,
         rating: 4.4,
         reviewsCount: 65,
         image: "https://media.bio.site/sites/590d4e5c-2c2f-401d-acca-7d3d15156ab4/TGDeFtwF4VqaED4zBLnBkR.jpg",
@@ -183,9 +183,9 @@ const PRODUCTS_DATA = [
     },
     {
         id: "stick-tile",
-        title: "Premium Peel and Stick Backsplash Tile",
+        title: "3D PU Gel Premium Peel and Stick Backsplash Tile",
         category: "decor",
-        price: 45.00,
+        price: 1199,
         rating: 4.6,
         reviewsCount: 72,
         image: "https://media.bio.site/sites/590d4e5c-2c2f-401d-acca-7d3d15156ab4/7Lw7TMiaz4CnybrPCV5heU.jpg",
@@ -208,9 +208,9 @@ const PRODUCTS_DATA = [
     },
     {
         id: "motivational-art",
-        title: "Set of 9 Motivational Inspirational Posters",
+        title: "Set of 9 Minimalist Typographic Quote Posters",
         category: "decor",
-        price: 18.00,
+        price: 199,
         rating: 4.7,
         reviewsCount: 104,
         image: "https://media.bio.site/sites/590d4e5c-2c2f-401d-acca-7d3d15156ab4/hbviuBtthQjxtaxWjZ74Bo.jpg",
@@ -233,9 +233,9 @@ const PRODUCTS_DATA = [
     },
     {
         id: "pinecone-light",
-        title: "Modern Wooden Pinecone Pendant Ceiling Light",
+        title: "Sustainable Wood Layered Pinecone Pendant Ceiling Light",
         category: "electrical",
-        price: 99.00,
+        price: 1899,
         rating: 4.9,
         reviewsCount: 48,
         image: "https://media.bio.site/sites/590d4e5c-2c2f-401d-acca-7d3d15156ab4/u9Laig32U3ozxfEZgmysRG.jpg",
@@ -258,9 +258,9 @@ const PRODUCTS_DATA = [
     },
     {
         id: "wood-desk",
-        title: "Minimalist Wood Computer Desk with Shelf",
+        title: "Modern Wood Study Computer Desk with Floating Monitor Shelf",
         category: "decor",
-        price: 159.00,
+        price: 4499,
         rating: 4.7,
         reviewsCount: 89,
         image: "https://media.bio.site/sites/590d4e5c-2c2f-401d-acca-7d3d15156ab4/itZeaVjusTXaevhmxZYGQF.jpg",
@@ -283,9 +283,9 @@ const PRODUCTS_DATA = [
     },
     {
         id: "star-projector",
-        title: "VanSmaGo LED Star Projector Night Light",
+        title: "VanSmaGo Star Galaxy Nebulae Laser Projector",
         category: "electrical",
-        price: 38.00,
+        price: 1599,
         rating: 4.8,
         reviewsCount: 215,
         image: "https://media.bio.site/sites/590d4e5c-2c2f-401d-acca-7d3d15156ab4/GnSNskza6DUeoYm9b9VZd6.jpg",
@@ -308,9 +308,9 @@ const PRODUCTS_DATA = [
     },
     {
         id: "arched-mirror",
-        title: "Wave Arched Tabletop Mirror - Beige",
+        title: "Wave Arched Tabletop Dressing Mirror - Beige",
         category: "decor",
-        price: 32.00,
+        price: 799,
         rating: 4.7,
         reviewsCount: 112,
         image: "https://media.bio.site/sites/590d4e5c-2c2f-401d-acca-7d3d15156ab4/4ySBjtPu9TYZWyc7jmXdr9.jpg",
@@ -333,9 +333,9 @@ const PRODUCTS_DATA = [
     },
     {
         id: "makeup-mirror",
-        title: "Irregular Tabletop Makeup Vanity Mirror",
+        title: "Abstract Tabletop Acrylic Puddle Makeup Mirror",
         category: "decor",
-        price: 24.00,
+        price: 499,
         rating: 4.6,
         reviewsCount: 94,
         image: "https://media.bio.site/sites/590d4e5c-2c2f-401d-acca-7d3d15156ab4/S3ohHeSQUy8BsYmVMQdhqd.jpg",
@@ -486,7 +486,7 @@ function renderCatalog() {
                     </div>
                     <p class="prod-desc-preview">${product.description}</p>
                     <div class="prod-footer">
-                        <span class="prod-price">$${product.price.toFixed(2)}</span>
+                        <span class="prod-price">₹${product.price.toLocaleString('en-IN')}</span>
                         <span class="prod-cta">
                             Details
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
@@ -652,7 +652,7 @@ function openDossier(productId) {
             <h2 class="dossier-title" id="dossier-title">${product.title}</h2>
             
             <div class="dossier-price-row">
-                <span class="dossier-price">$${product.price.toFixed(2)}</span>
+                <span class="dossier-price">₹${product.price.toLocaleString('en-IN')}</span>
                 <div class="dossier-rating">
                     <span>${starsHTML}</span>
                     <span>(${product.reviewsCount} reviews)</span>
@@ -727,7 +727,7 @@ function openInstagramModal() {
             </div>
             <div class="mini-info">
                 <h5 class="mini-title">${product.title}</h5>
-                <span class="mini-price">$${product.price.toFixed(2)}</span>
+                <span class="mini-price">₹${product.price.toLocaleString('en-IN')}</span>
             </div>
             <div class="mini-go-btn" aria-label="View product details">
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
