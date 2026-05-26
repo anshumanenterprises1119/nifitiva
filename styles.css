@@ -530,17 +530,68 @@ button {
     height: 380px;
     position: relative;
     overflow: hidden;
+    transition: all var(--transition-medium);
 }
 
-.edit-img-wrap img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform var(--transition-slow);
+/* --- Premium Backgrounds for style edits --- */
+.edit-card[data-edit="midnight-office"] .edit-img-wrap {
+    background: radial-gradient(circle at 75% 30%, rgba(212, 175, 55, 0.18) 0%, rgba(5, 5, 6, 0.95) 75%), 
+                linear-gradient(135deg, #09090b 0%, #15120d 45%, #2a2012 100%);
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.edit-card:hover .edit-img-wrap img {
-    transform: scale(1.05);
+/* Subtle glowing light shape inside the card background */
+.edit-card[data-edit="midnight-office"] .edit-img-wrap::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: 25%;
+    width: 140px;
+    height: 140px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.3) 0%, rgba(212, 175, 55, 0) 70%);
+    filter: blur(10px);
+    border-radius: var(--radius-full);
+    pointer-events: none;
+    transition: transform var(--transition-medium);
+}
+
+.edit-card[data-edit="midnight-office"]:hover .edit-img-wrap::before {
+    transform: scale(1.15);
+}
+
+.edit-card[data-edit="organic-minimalism"] .edit-img-wrap {
+    background: radial-gradient(circle at 25% 70%, rgba(255, 159, 28, 0.12) 0%, rgba(5, 5, 6, 0.95) 75%), 
+                linear-gradient(135deg, #050506 0%, #17120e 45%, #352316 100%);
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Subtle organic warm shape inside the card background */
+.edit-card[data-edit="organic-minimalism"] .edit-img-wrap::before {
+    content: '';
+    position: absolute;
+    bottom: 25%;
+    left: 20%;
+    width: 160px;
+    height: 160px;
+    background: radial-gradient(circle, rgba(255, 159, 28, 0.15) 0%, rgba(255, 159, 28, 0) 70%);
+    filter: blur(15px);
+    border-radius: var(--radius-full);
+    pointer-events: none;
+    transition: transform var(--transition-medium);
+}
+
+.edit-card[data-edit="midnight-office"]:hover .edit-img-wrap::before {
+    transform: scale(1.18) translate(-5px, -5px);
+}
+
+.edit-card[data-edit="organic-minimalism"]:hover .edit-img-wrap::before {
+    transform: scale(1.18) translate(5px, 5px);
 }
 
 .edit-overlay {
