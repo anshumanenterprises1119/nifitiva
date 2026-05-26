@@ -710,8 +710,8 @@ function openInstagramModal() {
         Featured materials: Travertine, dark architectural concrete base, warm ribbed oak wood accents.
     `;
     
-    // Filter shoppable list. In this post, we showcase the sandscape, led vine, and tabletop vanity mirror.
-    const featuredIds = ["sandscape", "led-vine", "makeup-mirror"];
+    // Filter shoppable list. In this post, we showcase the oak computer desk, wave arched mirror, and tabletop makeup mirror.
+    const featuredIds = ["wood-desk", "arched-mirror", "makeup-mirror"];
     const featuredProducts = PRODUCTS_DATA.filter(p => featuredIds.includes(p.id));
     
     elements.lookProductsCount.innerText = `(${featuredProducts.length})`;
