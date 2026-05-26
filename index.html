@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nifitiva - Premium curated home decor and aesthetic electrical items. Explore modern minimalist interior design, smart ambient lighting, and shop the look from our Instagram.">
+    <meta name="keywords" content="home decor, smart lighting, aesthetic electronics, minimalist design, nifitiva, affiliate shop, interior design">
+    <meta name="author" content="Nifitiva">
+    <title>Nifitiva | Premium Home Decor & Aesthetic Tech</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Preload Hero Image -->
+    <link rel="preload" href="assets/hero_bg.png" as="image">
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Alert/Banner -->
+    <div class="announcement-banner">
+        <span>Discover Our Curated Edits on Instagram <a href="https://instagram.com/nifitiva" target="_blank" rel="noopener">@nifitiva</a></span>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo" id="logo-link">
+                <span class="logo-dot"></span>nifitiva
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#edits" class="nav-link">Edits</a>
+                <a href="#instagram-shop" class="nav-link">Shop The Look</a>
+                <a href="#catalog" class="nav-link">Products</a>
+                <a href="#about" class="nav-link">About</a>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Instagram Social Icon -->
+                <a href="https://instagram.com/niffitiva" target="_blank" rel="noopener" class="icon-btn instagram-btn" aria-label="Nifitiva on Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                </a>
+
+                <!-- Hamburger Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav-drawer" id="mobile-nav">
+        <nav class="mobile-links">
+            <a href="#hero" class="mobile-link">Home</a>
+            <a href="#edits" class="mobile-link">Edits</a>
+            <a href="#instagram-shop" class="mobile-link">Shop The Look</a>
+            <a href="#catalog" class="mobile-link">Products</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="https://instagram.com/nifitiva" target="_blank" rel="noopener" class="mobile-link social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                Follow @nifitiva
+            </a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg" style="background-image: linear-gradient(rgba(11, 11, 12, 0.4), rgba(11, 11, 12, 0.85)), url('assets/hero_bg.png');"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-badge animate-fade-in">Home • Style • Useful Finds</span>
+                <h1 class="hero-title animate-slide-up">Curated Spaces.<br>Aesthetic Tech.</h1>
+                <p class="hero-description animate-slide-up-delayed">
+                    Harmonizing organic minimalist home decor with beautiful, functional smart electronics. Elevated interior designs carefully selected by <strong>Nifitiva</strong> to inspire modern living.
+                </p>
+                <div class="hero-actions animate-slide-up-delayed">
+                    <a href="#catalog" class="btn btn-primary">
+                        Explore Collections
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                    <a href="#instagram-shop" class="btn btn-secondary">Shop Instagram</a>
+                </div>
+            </div>
+            
+            <div class="hero-stats animate-fade-in-delayed">
+                <div class="stat-item">
+                    <span class="stat-num">100%</span>
+                    <span class="stat-lbl">Handpicked Aesthetics</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">Premium</span>
+                    <span class="stat-lbl">Materials & Tech</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">Daily</span>
+                    <span class="stat-lbl">Instagram Edits</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Smooth Scroll Indicator -->
+        <a href="#edits" class="scroll-indicator" aria-label="Scroll to Curated Edits">
+            <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+        </a>
+    </section>
+
+    <!-- Curated Style Guide Edits -->
+    <section class="edits-section" id="edits">
+        <div class="section-container">
+            <header class="section-header">
+                <span class="section-tag">Style Lookbooks</span>
+                <h2 class="section-title">Curated Style Edits</h2>
+                <p class="section-desc">Cohesive interior blueprints designed to perfectly blend biological elements with high-end electrical convenience.</p>
+            </header>
+
+            <div class="edits-grid">
+                <!-- Edit Card 1 -->
+                <div class="edit-card animate-scroll" data-edit="midnight-office">
+                    <div class="edit-img-wrap">
+                        <img src="assets/product_lamp.png" alt="The Midnight Office Edit" loading="lazy">
+                        <div class="edit-overlay">
+                            <span class="edit-tag">Vibe: Obsidian & Warm Light</span>
+                        </div>
+                    </div>
+                    <div class="edit-info">
+                        <h3>The Midnight Office Edit</h3>
+                        <p>Textured concrete desk surfaces, amber warm lights, and matte anodized aluminum details for deep nocturnal productivity.</p>
+                        <a href="#catalog" class="edit-link" onclick="filterByPreset('midnight')">
+                            Explore Edit
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Edit Card 2 -->
+                <div class="edit-card animate-scroll" data-edit="organic-minimalism">
+                    <div class="edit-img-wrap">
+                        <img src="assets/product_diffuser.png" alt="Organic Warmth Living Room" loading="lazy">
+                        <div class="edit-overlay">
+                            <span class="edit-tag">Vibe: Terracotta & Linen</span>
+                        </div>
+                    </div>
+                    <div class="edit-info">
+                        <h3>Organic Warmth Living Room</h3>
+                        <p>Minimal ceramic curves, natural walnut wood grain, terracotta clay, and soft diffusing humidifiers for high-quality air and visual peace.</p>
+                        <a href="#catalog" class="edit-link" onclick="filterByPreset('organic')">
+                            Explore Edit
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Shop Section -->
+    <section class="instagram-shop-section" id="instagram-shop">
+        <div class="section-container">
+            <header class="section-header">
+                <span class="section-tag">Instagram Shop</span>
+                <h2 class="section-title">As Seen On Feed</h2>
+                <p class="section-desc">Tap on any curated Instagram lifestyle setup below to instantly shop all the featured products in it.</p>
+            </header>
+
+            <div class="instagram-grid">
+                <!-- Post Card 1 -->
+                <div class="ig-card clickable" id="ig-post-1">
+                    <div class="ig-img-wrap">
+                        <img src="assets/instagram_look.png" alt="Aesthetic setup by @nifitiva containing wireless table lamp, minimalist ribbed vase, and retro speaker" loading="lazy">
+                        <div class="ig-hover-overlay">
+                            <div class="ig-hover-content">
+                                <svg class="ig-hover-logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                                <span>Shop The Look</span>
+                                <span class="ig-post-items">3 Premium Items Featured</span>
+                            </div>
+                        </div>
+                        <div class="ig-tag-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                            Shoppable
+                        </div>
+                    </div>
+                    <div class="ig-footer">
+                        <span class="ig-likes"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> 1,248 likes</span>
+                        <p class="ig-caption"><strong>nifitiva</strong> Reimagining cozy evenings. Ambient table lighting meets minimalist ceramic sculptures. The perfect wooden speaker makes everything complete. ✨ Link in bio to shop. #homedecor #aesthetictech</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Catalog/Products Section -->
+    <section class="catalog-section" id="catalog">
+        <div class="section-container">
+            <header class="section-header">
+                <span class="section-tag">Handpicked Collection</span>
+                <h2 class="section-title">The Affiliate Showcase</h2>
+                <p class="section-desc">Explore individual products, curated specifically for premium craftsmanship, gorgeous design, and daily convenience.</p>
+            </header>
+
+            <!-- Catalog Control Bar -->
+            <div class="catalog-controls">
+                <!-- Search bar -->
+                <div class="search-box">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <input type="text" id="catalog-search" placeholder="Search decor, lighting, speakers, materials...">
+                    <button class="clear-btn" id="search-clear" aria-label="Clear search">&times;</button>
+                </div>
+
+                <!-- Filters -->
+                <div class="filter-groups">
+                    <div class="filter-tabs" role="tablist">
+                        <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Collection</button>
+                        <button class="filter-tab" data-filter="decor" role="tab" aria-selected="false">Home Decor</button>
+                        <button class="filter-tab" data-filter="electrical" role="tab" aria-selected="false">Electrical Tech</button>
+                    </div>
+                    
+                    <div class="select-wrapper">
+                        <select id="sort-select" aria-label="Sort products">
+                            <option value="featured">Featured First</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="name">Alphabetical</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Active Filters Indicator -->
+            <div class="active-filter-chips" id="active-chips" style="display: none;">
+                <span class="chip-label">Active filters:</span>
+                <div class="chips-container" id="chips-container"></div>
+                <button class="clear-all-chips" id="clear-all-filters">Clear All</button>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be generated dynamically by app.js -->
+            </div>
+            
+            <!-- Empty State -->
+            <div class="catalog-empty-state" id="empty-state" style="display: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M8 11h6"/></svg>
+                <h3>No Items Found</h3>
+                <p>We couldn't find any products matching your current filters. Try relaxing your search criteria.</p>
+                <button class="btn btn-secondary" onclick="resetAllFilters()">Reset All Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Social Mission Section -->
+    <section class="about-section" id="about">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag">About Nifitiva</span>
+                    <h2 class="section-title">The Harmony of Form and Electron</h2>
+                    <p>
+                        We believe that technology shouldn't look sterile, and home design shouldn't be archaic. Nifitiva is a creative edit project born out of our Instagram feed, dedicated to mapping the most stunning minimalist electronics and organic home accents on the market.
+                    </p>
+                    <p>
+                        Every item we showcase has been carefully analyzed for aesthetic compatibility, physical materials (such as raw travertine, timber, metal, and glass), and daily functional reliability. Through our affiliate partnerships, we match you directly to high-quality distributors with transparent reviews and seamless shipping.
+                    </p>
+                    <div class="about-signature">
+                        <div class="sig-dot"></div>
+                        <div>
+                            <span class="sig-name">Nifitiva Editorial Team</span>
+                            <span class="sig-handle">@nifitiva</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-stack">
+                        <img src="assets/hero_bg.png" alt="Aesthetic cozy room setup" class="main-about-img" loading="lazy">
+                        <div class="accent-quote-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M11.19 12.07c-.07-.3-.12-.6-.14-.9-.02-.3-.02-.59-.02-.85 0-1.28.32-2.33.95-3.17.63-.83 1.56-1.42 2.8-1.75l.48 1c-.8.27-1.43.68-1.9 1.22-.47.53-.73 1.15-.77 1.83.33-.1.67-.15 1.02-.15 1.08 0 1.95.31 2.58.94.63.63.95 1.48.95 2.56 0 1.12-.35 2.03-1.05 2.72-.7.69-1.59 1.04-2.67 1.04-1.32 0-2.32-.41-3-.122-1.32 0-2.32-.41-3.03-1.24Z"/><path d="M2.04 12.07c-.07-.3-.12-.6-.14-.9-.02-.3-.02-.59-.02-.85 0-1.28.32-2.33.95-3.17.63-.83 1.56-1.42 2.8-1.75l.48 1c-.8.27-1.43.68-1.9 1.22-.47.53-.73 1.15-.77 1.83.33-.1.67-.15 1.02-.15 1.08 0 1.95.31 2.58.94.63.63.95 1.48.95 2.56 0 1.12-.35 2.03-1.05 2.72-.7.69-1.59 1.04-2.67 1.04-1.32 0-2.32-.41-3.03-1.24Z"/></svg>
+                            <p>Designing space is the physical art of designing peace.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Page Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="logo"><span class="logo-dot"></span>nifitiva</span>
+                    <p class="footer-brand-desc">Curating standard-setting aesthetic living spaces and modern hardware integrations.</p>
+                    <a href="https://instagram.com/nifitiva" target="_blank" rel="noopener" class="ig-follow-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        @nifitiva on Instagram
+                    </a>
+                </div>
+                
+                <div class="footer-links-group">
+                    <span class="footer-links-title">Quick Navigation</span>
+                    <a href="#hero">Home</a>
+                    <a href="#edits">Style Edits</a>
+                    <a href="#instagram-shop">Shop Instagram</a>
+                    <a href="#catalog">Showcase Catalog</a>
+                </div>
+
+                <div class="footer-links-group">
+                    <span class="footer-links-title">Contact & Social</span>
+                    <a href="https://instagram.com/nifitiva" target="_blank" rel="noopener">Instagram Feed</a>
+                    <a href="#about">Editorial Bio</a>
+                    <a href="mailto:contact@nifitiva.com">business@nifitiva.com</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-disclaimer">
+                    <p><strong>Affiliate Disclaimer:</strong> Nifitiva is a participant in several e-commerce affiliate associate programs. When you click our curated product suggestions and make purchases, we may earn a small, support-generating commission at absolutely zero additional cost to you. We only recommend products we genuinely love and analyze.</p>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Nifitiva. All rights reserved. Made for design-centric living.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Slide-out Product Dossier Drawer/Panel -->
+    <div class="dossier-overlay" id="dossier-overlay" aria-hidden="true">
+        <div class="dossier-panel" id="dossier-panel" role="dialog" aria-labelledby="dossier-title">
+            <button class="close-btn" id="dossier-close" aria-label="Close panel">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+
+            <div class="dossier-content" id="dossier-content-body">
+                <!-- Populated dynamically via app.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Instagram "Shop the Look" Immersive Lightbox Modal -->
+    <div class="look-overlay" id="look-overlay" aria-hidden="true">
+        <div class="look-modal" id="look-modal" role="dialog" aria-labelledby="look-modal-title">
+            <button class="close-btn" id="look-close" aria-label="Close modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+
+            <div class="look-modal-grid">
+                <!-- Left: Full Post Image -->
+                <div class="look-image-panel">
+                    <img id="look-main-img" src="" alt="Instagram shop setup look">
+                </div>
+
+                <!-- Right: Featured Products List -->
+                <div class="look-info-panel">
+                    <div class="look-header">
+                        <div class="look-user">
+                            <span class="user-avatar"></span>
+                            <div class="user-text">
+                                <span class="username">nifitiva</span>
+                                <span class="location">Shop the Look</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="look-caption-box">
+                        <p id="look-caption-text"></p>
+                    </div>
+
+                    <div class="look-products-section">
+                        <h4>Featured Products <span id="featured-count">(0)</span></h4>
+                        <div class="look-products-list" id="look-products-list">
+                            <!-- Populated dynamically via app.js -->
+                        </div>
+                    </div>
+
+                    <div class="look-footer">
+                        <p class="disclaimer-text">Click any item above to view its details or shop the affiliate link directly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Entry Point -->
+    <script src="app.js"></script>
+</body>
+</html>
